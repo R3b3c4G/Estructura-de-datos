@@ -16,7 +16,7 @@ print(semestre)
 Inicialmente en la primera línea imprimirá 3, pero en como dentro del código la variable semestre
 se reasigna con otro valor, esta causa que al volver a imprimir la variable semestre arroje otro valor en la pantalla.
 
-#Resultado en pantalla:
-#3
-#4
+Resultado en pantalla:
+3
+4
 """
