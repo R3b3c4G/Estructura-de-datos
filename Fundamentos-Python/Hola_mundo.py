@@ -6,5 +6,5 @@
 print("Hola mundo")
 #Notas:
 #La función print es para mostrar en pantalla.
-#A diferencia con el lenguaje C o C++, en Python no se agrega el f al print y tampoco llev
+#A diferencia con el lenguaje C o C++, en Python no se agrega el f al print y tampoco lleva
 # un punto y coma al final de cada línea de código.

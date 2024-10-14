@@ -13,4 +13,4 @@ semestre = 4        # la variable ya no apunta al objeto anterior, sino a uno nu
 print(semestre)
 #Este programa imprimirá el valor de la variable semestre.
 # inicialmente en la primera línea imprimirá 3, pero en otra línea la variable semestre
-# se reasigna con otro valor causando que en la segunda linea al volver a imprimer la variable semestre arrojará en pantalla otra variabl
+# se reasigna con otro valor causando que en la segunda linea al volver a imprimer la variable semestre arrojará en pantalla otra variable
