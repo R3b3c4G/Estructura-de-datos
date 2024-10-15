@@ -84,7 +84,7 @@ es_verdadero = bool(var_cadena)
 print(f"¿El valor de {var_cadena} es verdadero? {es_verdadero}.")
 """
 Resultado en pantalla:
-Conversión a booleanos.
+Conversión número a booleano.
 ¿El valor de 0 es verdadero? False.
 ¿El valor de -30 es verdadero? True.
 ¿El valor de 0.0 es verdadero? False.
