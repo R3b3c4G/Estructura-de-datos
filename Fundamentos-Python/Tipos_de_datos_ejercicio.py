@@ -1,5 +1,5 @@
 #Rebeca Gregorio Espina.
-#8 de octubre de 2024.
+#9 de octubre de 2024.
 """
 Descripción: Este programa contiene algunos ejemplos del uso de los tipos de
 datos básicos en Python, tales como variables de tipo:
