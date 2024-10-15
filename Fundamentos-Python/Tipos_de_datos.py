@@ -3,8 +3,10 @@
 """
 Descripción:
 Usos de los tipos básico de datos en Python.
-"""
 
+En este programa se demuestra el uso de diferentes tipos de datos básicos utilizados en Python,de los
+cuales están los  números enteros, decimales, cadenas de texto, booleanos y las variables que no tienen contenido.
+"""
 
 # Notas:
 """
@@ -28,8 +30,8 @@ mi_variable_decimal = 12.12
 print("Tipo de dato decimal:", mi_variable_decimal)
 
 # Cadena de texto
-mi_variable_texto_nombre = "Alberto"
-mi_variable_texto_apellido = 'Martinez'
+mi_variable_texto_nombre = "Rebeca"
+mi_variable_texto_apellido = 'Gregorio'
 print("Cadena de texto:", mi_variable_texto_nombre, mi_variable_texto_apellido)
 
 # Booleno
@@ -45,5 +47,7 @@ print("Tipo none:",mi_variable_none)
 En Python, a diferencia de otros lenguajes de programación, no existe un tipo específico para definir constantes.
 Se utiliza una convención de colocar las variables en mayúsculas y no modificarlas.
 '''
+#El valor de una constante ya es fijo a partir de que se crea (no se debe modificar).
+#Una constante tiene un valor universal.
 VARIABLE_CONSTANTE = 3.1416
 print("Ejemplo de convención de una constante:", VARIABLE_CONSTANTE)
