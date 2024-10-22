@@ -14,13 +14,12 @@ Escribe un programa de nombre Entrada_conversiones_ejercicio.py que realice lo s
 """
 
 # a) Pida los datos de los profesores utilizando nombres de variables adecuadas, la función input y el casting:
-
 nombre = input("Ingresa el nombre del profesor: ")
 # La función input() obtiene los datos ingresados por el usuario.
 numero_cubiculo = int(input("Ingresa el número de cubículo: "))
-# Esta funcion anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
+# Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
 horas_clase = float(input("Ingresa las horas de clase que imparte a la semana: "))
-# Esta funcion anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
+# Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
 print()
 print(f"{nombre} se encuentra en el cubículo {numero_cubiculo} e imparte {horas_clase:.3f} horas de clase a la semana.")
 

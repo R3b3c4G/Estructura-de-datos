@@ -25,7 +25,7 @@ print()
 print(f"{nombre} cursa el {semestre} semestre con un promedio de {promedio:.2f}. Además, es mujer: {es_mujer}.")
 """
 # :.2f-->Es un formato de impresión en el que se especifica que se deben mostrar dos decimales.
-# Por lo tanto, para la variable promedio se mostrarán dos decimales.
+# Por lo tanto, para la variable "promedio" se mostrarán dos decimales.
 Ejemplo con diferentes valores:
     -Ana cursa el 6 semestre con un promedio de 7.00. Además, es mujer: True.
     -Raúl cursa el 3 semestre con un promedio de 8.00. Además, es mujer: False.
