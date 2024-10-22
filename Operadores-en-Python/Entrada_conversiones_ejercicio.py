@@ -20,8 +20,12 @@ numero_cubiculo = int(input("Ingresa el número de cubículo: "))
 # Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
 horas_clase = float(input("Ingresa las horas de clase que imparte a la semana: "))
 # Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
+años_en_la_unsij = input("¿Tiene más de 5 años en la UNSIJ (Si/No)?: ")
+# Para trabajar con un valor booleano, la cadena se convierte a minúscula y lo comparamos con la cadena "si".
+años_en_la_unsij = años_en_la_unsij.lower() == "si"
+
 print()
-print(f"{nombre} se encuentra en el cubículo {numero_cubiculo} e imparte {horas_clase:.3f} horas de clase a la semana.")
+print(f"{nombre} se encuentra en el cubículo {numero_cubiculo} e imparte {horas_clase:.3f} horas de clase a la semana. Además, lleva más de 5 años en la UNSIJ: {años_en_la_unsij}.")
 
 # b) Muestre los datos en consola de forma adecuada.
 """
@@ -30,5 +34,5 @@ Resultado en pantalla:
     -Ingresa el número de cubículo: 12
     -Ingresa las horas de clase que imparte a la semana: 10
 
-    -Alberto Martínez Barbosa se encuentra en el cubículo 12 e imparte 10.000 horas de clase a la semana.
+    -Alberto Martínez Barbosa se encuentra en el cubículo 12 e imparte 10.000 horas de clase a la semana. Además, lleva más de 5 años en la UNSIJ: False.
 """
