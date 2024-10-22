@@ -10,7 +10,7 @@ print("****   Datos de los alumnos    *****")
 nombre = input("Ingresa el nombre: ")
 # La función input() obtiene los datos ingresados por el usuario.
 semestre = int(input("Ingresa el no. de semestre: "))
-# Esta funcion anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
+# Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
 promedio = float(input("Ingresa el promedio: "))
 # Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
 es_mujer = input("¿Es mujer (Si/No)?: ")
