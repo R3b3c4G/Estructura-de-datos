@@ -14,10 +14,9 @@ numero1_cadena = input("Introduce un número decimal: ")
 numero2_cadena = input("Introduce otro número decimal: ")
 resultado_cadena = numero1_cadena + numero2_cadena
 # Verificar qué es lo que realiza esta instrucción (ver el print).
-
 print()
 print(" ****  Recibir número sin un casting de varibles  ****")
-print(f"El resultado de {numero1_cadena} y {numero2_cadena} es: {resultado_cadena}")
+print(f"El resultado de {numero1_cadena} y {numero2_cadena} es: {resultado_cadena}.")
 """
 -Las variables "numero1_cadena" y "numero2_cadena" se almacenan como cadenas y la suma de estos se guarda en la variable "resultado_cadena".
     *Al realizar la suma no se refleja la operación aritmética debido a que son cadenas y en lugar de esto la variable "resultado_cadena" 
@@ -38,7 +37,7 @@ resultado_float = numero1_float + numero2_float
 # Verificar qué es lo que realiza de esta manera y compáralo.
 print()
 print(" ****  Casting de varibles  ****")
-print(f"El resultado de {numero1_float} y {numero2_float} es: {resultado_float}")
+print(f"El resultado de {numero1_float} y {numero2_float} es: {resultado_float}.")
 """
 -Las variables "numero1_cadena" y "numero2_cadena" se convierten a números decimales y se guardan en una nueva variable.
 -La variable "resultado_float" almacena la suma de las variables "numero1_float" y "numero1_float" .
