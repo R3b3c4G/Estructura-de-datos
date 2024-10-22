@@ -21,8 +21,6 @@ numero1_float = float(numero1_cadena)
 numero2_float = float(numero2_cadena)
 # Las variables se convirtieron en números decimales.
 
-
-
 # b) Muestre los resultados de las operaciones básicas con esos números: suma, resta, multiplicación y división.
 # Suma.
 print(" ****  Suma  ****")
