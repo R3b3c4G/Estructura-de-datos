@@ -12,7 +12,7 @@ nombre = input("Ingresa el nombre: ")
 semestre = int(input("Ingresa el no. de semestre: "))
 # Esta funcion anidada permite que el valor que el usuario ingrese se convierta directamente a un número entero.
 promedio = float(input("Ingresa el promedio: "))
-# Esta funcion anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
+# Esta función anidada permite que el valor que el usuario ingrese se convierta directamente a un número decimal.
 es_mujer = input("¿Es mujer (Si/No)?: ")
 # No es posible convertir directamente una cadena a un valor booleano.
 # Por ello, utilizamos la misma variable, convertimos a  minúsculas y lo comparamos con la cadena "si".
