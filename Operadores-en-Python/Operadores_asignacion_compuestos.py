@@ -1,6 +1,6 @@
 '''
-Nombre:
-Fecha:
+Nombre: Rebeca Gregorio Espina.
+Fecha: 28 de octubre de 2024.
 Descripción:
 Ejemplos de uso de los operadores de asignación compuestos.
 '''
