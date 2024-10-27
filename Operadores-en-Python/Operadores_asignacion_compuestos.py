@@ -14,16 +14,16 @@ con el operador de asignación (=).
 # Se solicita un número para realizar diferentes operaciones de asignación compuestas.
 numero = int(input("Ingresa un número: "))
 print(f"Valor ingresado: {numero}.")
-
+# Suma.
 numero+=20      # Equivale a numero = numero + 20.
 print(f"Nuevo valor (+20): {numero}.")
-
+# Resta.
 numero-=4       # Equivale a numero = numero - 4.
 print(f"Nuevo valor (-4): {numero}.")
-
+# Multiplicación.
 numero*=2       # Equivale a numero = numero * 2.
 print(f"Nuevo valor (*2): {numero}.")
-
+# División.
 numero/=5       # Equivale a numero = numero / 5.
 print(f"Nuevo valor (/5): {numero:.2f}.")
 
