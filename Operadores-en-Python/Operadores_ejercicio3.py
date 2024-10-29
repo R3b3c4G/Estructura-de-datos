@@ -22,6 +22,7 @@ usuario="Alumnos"
 contraseña="Python"
 # b) Pida al usuario una cadena con el usuario.
 usuario2=input("Ingresa tu usuario: ")
+# c) Pida al usuario una cadena con la contraseña.
 contraseña2=input("Ingresa tu contraseña: ")
 print()
 # d) Si ambas cadenas son iguales a las cadenas declaradas internamente, entonces el usuario se autenticó correctamente.
