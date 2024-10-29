@@ -17,7 +17,7 @@ print()
 # b) Utilice la lógica adecuada para determinar cuál de los dos números es menor o si es que son iguales.
 if numero1 > numero2:
     resultado = (f"El número {numero2} es menor que {numero1}.")
-elif numero1<numero2:
+elif numero1 < numero2:
     resultado = (f"El número {numero1} es menor que {numero2}.")
 else:
     resultado = (f"El número {numero1} y {numero2} son iguales.")
