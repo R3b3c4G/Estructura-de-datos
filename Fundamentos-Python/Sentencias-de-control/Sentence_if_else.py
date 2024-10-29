@@ -31,3 +31,18 @@ if numero % 2 == 0:                                 # Implica que es par.
 else:
     print(f"El número {numero} es impar.")                    # Implica que es impar.
 print("FIN.")
+
+"""
+# Resultado en consola:
+    #
+    Ingresa un número entero: 8
+
+    El número 8 es par.
+    FIN.
+    
+    #
+    Ingresa un número entero: 7
+    
+    El número 7 es impar.
+    FIN.
+"""
