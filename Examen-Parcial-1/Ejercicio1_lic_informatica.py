@@ -1,6 +1,6 @@
 '''
 Nombre: Rebeca Gregorio Espina.
-Fecha: 30 de octubre de 2024.
+Fecha: 3 de noviembre de 2024.
 Descripción:
 Este programa imprime en consola los números, separados por comas, del 1 hasta un número ingresado por el usuario.
 Sin embargo, se deben sustituir los siguientes valores:
