@@ -9,7 +9,6 @@ Sin embargo, se deben sustituir los siguientes valores:
     Múltiplos de 3 y 5 por la frase "Licenciatura en Informática" y se imprima un salto de línea en lugar de la coma.
 
 INSTRUCCIONES:
-Cree un directorio en GitHub: ➡️ Estructuras-de-Datos ➡️ Examen-Parcial-1. En este repositorio se van a incluir todos los ejercicios de Python.
 Escribe un programa de nombre Ejercicio1_lic_informatica.py y sube el enlace de GitHub.
 Para ello:
     a) Solicite un número en consola.
