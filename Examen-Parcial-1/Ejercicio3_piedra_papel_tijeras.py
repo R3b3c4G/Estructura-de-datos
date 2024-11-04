@@ -68,6 +68,9 @@ while opcion_jugador != 0 :
         print("--------------------------------------")
 print()
 print("Fin del juego.")
+
+# d) Muestre en la consola la elección del jugador, del CPU y el resultado.
+# e) Repita nuevamente el menú hasta salir.
 """
 # Resultados en consola:
     *** Juego de piedra, papel o tijera   ***
