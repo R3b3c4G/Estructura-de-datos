@@ -19,38 +19,154 @@ c) Realice la lógica adecuada para calcular al ganador.
 d) Muestre en la consola la elección del jugador, del CPU y el resultado.
 e) Repita nuevamente el menú hasta salir.
 '''
-import random
-opcion = 1
+from random import randint
+opcion_jugador = 1
 victorias_jugador=0
 victorias_cpu=0
 empates = 0
-while opcion != 0 :
-    print("*** Juego de piedra, papel o tijera   ***")
+while opcion_jugador != 0 :
+    print("\n*** Juego de piedra, papel o tijera   ***")
+# a) Muestre la cantidad de victorias, empates y derrotas.
     print(f"Victorias del jugador: {victorias_jugador}, empates: {empates} y victorias del CPU: {victorias_cpu}")
     print("[1].- Piedra.")
     print("[2].- Papel.")
     print("[3].- Tijera.")
     print("[0].- Salir.")
-    opcion_jugador = int(input("Seleccione una de las opciones anteriores: "))
-    opcion_cpu = random.randint(1,3)
-    if opcion_jugador == opcion_cpu:
-        resultado= "empate"
-        empates+=1
-    if opcion_jugador == 1 and opcion_cpu == 3:
-        resultado_jugador = "piedra"
-        resultado_cpu = "tijera"
-        victorias_jugador+=1
-    if opcion_jugador == 2 and opcion_cpu == 1:
-        resultado_jugador= "papel"
-        resultado_cpu = "piedra"
-        victorias_jugador += 1
-    if opcion_jugador == 3 and opcion_cpu == 2:
-        resultado_jugador = "tijera"
-
-        resultado_cpu = "papel"
-        victorias_jugador+=1
-    else:
-        victorias_cpu+=1
-    print(f"Jugador: {resultado_jugador}. CPU: {resultado_cpu}. El resultado es {resultado}")
+    opcion_jugador = int(input("Seleccione una de las opciones anteriores: "))  # b) Pida al usuario una opción del menú.
+    if opcion_jugador != 0:
+        opcion_cpu = randint(1,3)
+    # c) Realice la lógica adecuada para calcular al ganador.
+        if opcion_jugador == 1 and opcion_cpu == 1:
+            print("Jugador: Piedra. CPU: Piedra. El resultado es empate.")
+            empates+=1
+        elif opcion_jugador == 2 and opcion_cpu == 2:
+            print("Jugador: Papel. CPU: Papel. El resultado es empate.")
+            empates+=1
+        elif opcion_jugador == 3 and opcion_cpu == 3:
+            print("Jugador: Tijera. CPU: Tijera. El resultado es empate.")
+            empates+=1
+        elif opcion_jugador == 1 and opcion_cpu == 3:
+            print("Jugador: Piedra. CPU: Tijera. El ganador es el jugador.")
+            victorias_jugador+=1
+        elif opcion_jugador == 2 and opcion_cpu == 1:
+            print("Jugador: Papel. CPU: Piedra. El ganador es el jugador.")
+            victorias_jugador += 1
+        elif opcion_jugador == 3 and opcion_cpu == 2:
+            print("Jugador: Tijera. CPU: Papel. El ganador es el jugador.")
+            victorias_jugador+=1
+        elif opcion_jugador == 3 and opcion_cpu == 1:
+            print("Jugador: Tijera. CPU: Piedra. El ganador es el CPU.")
+            victorias_cpu+=1
+        elif opcion_jugador == 1 and opcion_cpu == 2:
+            print("Jugador: Piedra. CPU: Papel. El ganador es el CPU.")
+            victorias_cpu+=1
+        elif opcion_jugador == 2 and opcion_cpu == 3:
+            print("Jugador: Papel. CPU: Tijera. El ganador es el CPU.")
+            victorias_cpu+=1
+        else:
+            print("Opción no válida.")  # Cualquier otro caso -> Mostrar un mensaje de "opción no válida".
+        print("--------------------------------------")
 print()
-print("Saliendo del programa...")
+print("Fin del juego.")
+"""
+# Resultados en consola:
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 0, empates: 0 y victorias del CPU: 0
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 1
+    Jugador: Piedra. CPU: Tijera. El ganador es el jugador.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 1, empates: 0 y victorias del CPU: 0
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 2
+    Jugador: Papel. CPU: Papel. El resultado es empate.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 1, empates: 1 y victorias del CPU: 0
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 2
+    Jugador: Papel. CPU: Piedra. El ganador es el jugador.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 2, empates: 1 y victorias del CPU: 0
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 3
+    Jugador: Tijera. CPU: Piedra. El ganador es el CPU.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 2, empates: 1 y victorias del CPU: 1
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 3
+    Jugador: Tijera. CPU: Papel. El ganador es el jugador.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 3, empates: 1 y victorias del CPU: 1
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 3
+    Jugador: Tijera. CPU: Papel. El ganador es el jugador.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 4, empates: 1 y victorias del CPU: 1
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 1
+    Jugador: Piedra. CPU: Papel. El ganador es el CPU.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 4, empates: 1 y victorias del CPU: 2
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 2
+    Jugador: Papel. CPU: Tijera. El ganador es el CPU.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 4, empates: 1 y victorias del CPU: 3
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 4
+    Opción no válida.
+    --------------------------------------
+    
+    *** Juego de piedra, papel o tijera   ***
+    Victorias del jugador: 4, empates: 1 y victorias del CPU: 3
+    [1].- Piedra.
+    [2].- Papel.
+    [3].- Tijera.
+    [0].- Salir.
+    Seleccione una de las opciones anteriores: 0
+    
+    Fin del juego.
+"""
