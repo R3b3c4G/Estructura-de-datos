@@ -34,8 +34,8 @@ def menu ():
     print("[7].-Potenciación.")
     print("[0].- Salir.")
 
-# Función para realizar los  calculos.
-def calculadora (opcion, numero1, numero2): # c) Calcule el resultado de acuerdo a la opción.
+# Función para realizar los  cálculos.
+def calculadora (opcion, numero1, numero2): # c) Calcule el resultado de acuerdo con la opción.
     if opcion == 1: # Suma.
         resultado = numero1 + numero2
     elif opcion == 2:   # Resta.
@@ -44,17 +44,17 @@ def calculadora (opcion, numero1, numero2): # c) Calcule el resultado de acuerdo
         resultado = numero1 * numero2
     elif opcion == 4:   # División.
         if numero2 == 0:
-            return "No es válido una división entre 0." # Si el segundo valor es 0, no llega a realizarse la operación y se regresa un letrero.
+            return "No es válida una división entre 0." # Si el segundo valor es 0, no llega a realizarse la operación y se regresa un letrero.
         resultado = numero1 / numero2
     elif opcion == 5:   # División entera.
         if numero2 == 0:
-            return "No es válido una división entre 0." # # Si el segundo valor es 0, no llega a realizarse la operación y se regresa un letrero.
+            return "No es válida una división entre 0." # Si el segundo valor es 0, no llega a realizarse la operación y se regresa un letrero.
         resultado = numero1 // numero2
     elif opcion == 6:   # Módulo.
         resultado = numero1 % numero2
     elif opcion == 7:   # Potenciación.
         resultado = numero1 ** numero2
-    return resultado    # Después de verificar que caso aplica, se regresa a la función principal el resultado de la operación.
+    return resultado    # Después de verificar qué caso aplica, se regresa a la función principal el resultado de la operación.
 
 while opcion != 0:
     menu()  # a) Muestre el menú.
