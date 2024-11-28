@@ -18,48 +18,55 @@ Para ello:
     b) Se debe utilizar una única función para devolver el valor máximo y mínimo en una tupla.
 '''
 
-
-opcion = None
-def menu ():
+def menu ():    # Función para imprimir menú y retornar la opción del usuario.
+    print("***  Valor máximo y mínimo de una lista de números del usuario  ***")
     print("[1].- Ver lista de números.")
     print("[2].- Añadir número a la lista.")
     print("[3].- Determinar el valor máximo y mínimo de la lista de números.")
     print("[0].- Salir.")
+    opcion = int(input("Elige una opción: "))
+    return opcion
 
-def valor ():
-    opcion = menu()
-    if opcion == 1:     # Ver lista de números.
-        if len(tupla) != 0:
-            for a in mi_numero:
-                print(a)
-        else:
-            print("No hay números a mostrar.")
-    if opcion == 2:     # Añadir número a la lista.
+def mostrar_lista (lista):  # Función para mostrar lista de números.
+        print(f"La lista de numeros es: {lista}")
+
+def añadir_numero (lista):  # Función para añadir números a la lista.
         print()
-        mi_numero = int(input("Ingresa el número a la lista. "))
-        tupla = (mi_numero)
+        mi_numero = int(input("Ingresa el número a la lista: "))
+        lista.append(mi_numero)
         print(f"¡El número {mi_numero} se agregó con éxito!")
 
-    if opcion == 3:     # Determinar el valor máximo y mínimo de la lista de números.
-        if len(tupla) != 0:
-            maximo = tupla [0]
-            minimo = tupla [0]
-            for a in mi_numero:
-                if a > maximo
-                    maximo = a
-                if a < minimo
-                    minimo = a
-        else:
-            print("No hay números.")
+def maximo_minimo (lista):  # Función para determinar el número máximo y minímo de lista de números.
+    tupla = (lista)
+    maximo = tupla [0]
+    minimo = tupla [0]
+    for a in tupla:
+        if a > maximo:
+            maximo = a
+        if a < minimo:
+            minimo = a
+    print(f"El valor máximo es: {maximo}")
+    print(f"El valor minímo es: {minimo}")
 
-    if opcion == 0:
-        print("Saliendo del programa.")
-    else:
-        print("Opción no válida.")
-
-print("***  Valor máximo y mínimo de una lista de números del usuario  ***")
+opcion = None
+lista = []
+tupla = ()
+opcion = menu()
 while opcion != 0 :
-    menu()
-    opcion = int(input("Elige una opción: "))
-    print(valor)
-    print("-------------------------")
+    print()
+    if 0 <= opcion <=3:
+        if opcion == 1:
+            if len(lista) == 0:
+                print("No hay números para mostrar.")
+            else:
+                mostrar_lista(lista)
+        elif opcion == 2:
+            añadir_numero(lista)
+        elif opcion == 3:
+            if len(lista) == 0:
+                print("No hay números para mostrar.")
+            else:
+                maximo_minimo(lista)
+        print("-------------------------\n")
+        opcion = menu()
+print("Fin del programa.")
