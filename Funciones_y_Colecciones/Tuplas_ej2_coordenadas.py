@@ -62,7 +62,7 @@ def eliminar (coordenadas): # Función para eliminar coordenada (x,y).
         print(f"{a + 1}) {coordenadas[a]}")
     posicion = int(input("Seleccione el índice de la coordenada a eliminar: "))
     coordenadas.pop(posicion - 1)
-    print("La coordenada ha siso eliminada correctamente.")
+    print("La coordenada ha sido eliminada correctamente.")
 
 coordenadas = []    # c) Utilice una lista para almacenar las tuplas de las coordenadas.
 opcion = menu()
