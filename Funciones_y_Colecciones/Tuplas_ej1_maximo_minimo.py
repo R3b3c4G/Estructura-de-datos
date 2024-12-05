@@ -69,7 +69,7 @@ while opcion != 0 :
                 maximo_minimo(lista)
         print("-------------------------\n")
     else:
-        print("Opción no válida\n")
+        print("Opción no válida.\n")
         print("-------------------------\n")
     opcion = menu()
 print("Fin del programa.")
