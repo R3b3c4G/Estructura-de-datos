@@ -71,7 +71,7 @@ def binario_decimal (binario):  # Función para convertir un número binario a d
     return decimal
 
 
-#####
+####
 def hexadecimal_a_decimal_y_binario(hexadecimal):   # Función para convertir un número hexadecimal a decimal y binario.
     hexadecimal = str(hexadecimal)
     decimal = 0
