@@ -74,13 +74,14 @@ def menu():
     print("     [0].- Salir.")
     opcion = int(input("\nIngrese una de la opciones:"))
     return opcion
+"""
 def casa_perteneciente():
     casa = contador['Gryffindor']
     if casa < contador['Slytherin']:
         casa = contador ['Slytherin']
     elif casa < contador ['Hufflepuff']:
         casa = contador ['Hufflepuff']
-    elif casa < contador ['Ravenclaw']
+    elif casa < contador ['Ravenclaw']:
     print(f"Perteneces a la casa: {casa}")
 
 def pregunta(preguntas, contadpr):
@@ -103,8 +104,4 @@ preguntas = [{'pregunta':'a) ¿Cuál de las siguientes opciones odiarías más q
                   'opciones': {'Griffindor': 'Valiente.', 'Slytherin': 'Ambicioso.', 'Hufflepuff': ' Leal.', 'Ravenclaw': 'Curioso.'}
                   }]
 contador =  {'Gryffindor': 0,'Slytherin': 0,'Hufflepuff': 0,'Ravenclaw': 0}
-opcion = menu()
-while opcion != 0:
-
-
-
+opcion = menu()"""
