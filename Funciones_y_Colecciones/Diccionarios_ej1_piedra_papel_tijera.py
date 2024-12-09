@@ -64,7 +64,7 @@ while opcion != 0:
                     (tijeras, papel): jugador
                     }
         resultado = opciones_juego.get((opcion_usuario, opcion_cpu), empate)
-        if resultado == jugador:    # Logica para determinar ganador,
+        if resultado == jugador:    # Lógica para determinar ganador.
             victorias_jugador += 1  # Cantidad de juegos ganados del jugador.
         elif resultado == cpu:
             victorias_cpu += 1  # Cantidad de juegos ganados de la CPU.
