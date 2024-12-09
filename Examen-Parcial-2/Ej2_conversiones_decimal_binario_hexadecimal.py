@@ -33,21 +33,54 @@ def decimal_binario(decimal):
         residuo = decimal % 2
         binario = str(residuo) + binario # Convertimos el residuo en una cadena y se concatena con la cadena "binario".
         decimal = decimal // 2
-    print(f"La conversion a binaria es {binario}")
-
+    return binario
+valores_hexadecimal ={'0':'0', '1':'1', '2':'2', '3':'3', '4':'4', '5':'5',
+                      '6':'6', '7':'7', '8':'8', '9':'9', '10':'A', '11':'B',
+                      '12':'C', '13':'D', '14':'E', '15':'F'
+                     }
 def decimal_hexadecimal(decimal):
     hexadecimal = str()
     while decimal >= 0:
-        if decimal < 10:
-            hexadecimal = decimal
-        else:
-            binario = str(residuo) + binario  # Convertimos el residuo en una cadena y se concatena con la cadena "binario".
-        decimal = decimal // 2
-    print(f"La conversion a binaria es {binario}")
+            residuo = decimal % 16
+            if residuo < 10:
+                hexadecimal = str(residuo) + hexadecimal
+            else:
+                for residuo in valores_hexadecimal:
+                    hexadecimal = valores_hexadecimal[residuo] + hexadecimal
+            decimal = decimal // 16
+    return hexadecimal
+
+def binario_decimal (binario):
+    decimal = 0
+    for c in binario:
+        if c == 1:
+            decimal += 2 ** c
+    return decimal
+
+def binario_hexadecimal(binario):
+    decimal = binario_decimal(binario)
+    hexadecimal = decimal_hexadecimal(decimal)
+    return hexadecimal
+
+def hexadecimal_decimal (hexadecimal):
+
+def hexadecimal_binario (hexadecimal):
+    decimal = hexadecimal_decimal(hexadecimal)
+    binario = decimal_binario(decimal)
+    return binario
+
 
 
 
 opcion = menu()
 if opcion == 1:
-    decimal = int(input("Ingrese su número decimal: "))
-    decimal_binario(decimal)
+    decimal = int(input("Ingrese el número en base decimal: "))
+    print(f" El número decimal {decimal} es {decimal_binario(decimal)} en binario y {decimal_hexadecimal(decimal)} en hexadecimal.")
+if opcion == 2:
+    binario = int(input("Ingrese el número en base binario: "))
+    print(f" El número decimal {binario} es {binario_decimal(binario)} en decimal y {binario_hexadecimal(binario)} en hexadecimal.")
+if opcion == 3:
+    hexadecimal = int(input("Ingrese el número en base hexadecimal: "))
+    print(f" El número hexadecimal {hexadecimal} es {hexadecimal_decimal(hexadecimal)} en decimal y {hexadecimal_binario(hexadecimal)} en binario.")
+
+
