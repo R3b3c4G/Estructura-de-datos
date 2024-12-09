@@ -71,7 +71,7 @@ def hexadecimal_binario (hexadecimal):
 
 
 
-
+#.
 opcion = menu()
 if opcion == 1:
     decimal = int(input("Ingrese el número en base decimal: "))
