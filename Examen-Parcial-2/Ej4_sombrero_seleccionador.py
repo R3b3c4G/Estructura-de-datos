@@ -65,6 +65,7 @@ Slytherin = "Slytherin."
 Hufflepuff = "Hufflepuff"
 Ravenclaw = "Ravenclaw"
 '''
+"""
 from random import choice
 
 
@@ -72,9 +73,9 @@ def menu():
     print("***  Ejercicio 4. Test del sombrero seleccionador de Harry Potter.  ***")
     print("     [1].- Iniciar test.")
     print("     [0].- Salir.")
-    opcion = int(input("\nIngrese una de la opciones:"))
+    opcion = int(input("Ingrese una de la opciones:"))
     return opcion
-"""
+
 def casa_perteneciente():
     casa = contador['Gryffindor']
     if casa < contador['Slytherin']:
