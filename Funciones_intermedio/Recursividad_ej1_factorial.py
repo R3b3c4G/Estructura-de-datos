@@ -27,12 +27,9 @@ def funcion_recursiva_factorial(numero: int) -> int:
     Función que calcula el factorial de un número entre 0 y un entero positivo utilizando recursividad.
     :param numero: Se imprime del cero hasta este número.
         """
-    # Primer caso base: Factorial de 0 es 1.
+    # Caso base: Factorial de 0 es 1.
     if numero == 0:
         return 1
-    # Segundo caso base: Factorial de 1 es 1.
-    elif numero == 1:
-        return numero
     # Caso recursiva: numero! = numero * (numero -1)!  para numero > 1.
     else:
         return numero * funcion_recursiva_factorial(numero - 1)
