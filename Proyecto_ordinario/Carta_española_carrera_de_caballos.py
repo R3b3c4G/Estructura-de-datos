@@ -11,7 +11,7 @@ El primer caballo en llegar a la meta gana la partida.
 import random
 
 # Definir cartas para el volteo de cartas.
-cartas_vertical = [
+cartas_horizontales = [
     "1 de Oros", "2 de Oros", "7 de Copas", "4 de Espadas", "5 de Espadas", "12 de Bastos"
 ]
 # Definir baraja principal.
@@ -27,10 +27,10 @@ meta = 6
 
 def voltear_carta() -> str:
     """
-    Función que selecciona e imprime una carta vertical (carta volteada).
+    Función que selecciona e imprime una carta horizontal (carta volteada).
     :return: Regresa la carta volteada aleatoriamente.
     """
-    payaso = random.choice(cartas_vertical)
+    payaso = random.choice(cartas_horizontales)
     print(f"¡La carta {payaso} se ha volteado! 🤡\n")
     return payaso
 
