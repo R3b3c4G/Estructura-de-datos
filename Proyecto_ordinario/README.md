@@ -26,6 +26,7 @@ Requisitos
 Para poder ejecutar estos programas se debe tener Python instalado en la computadora.
 
 Cómo ejecutar los Juegos
+
     -Clona o descarga este repositorio en tu computadora.
     -Abre una terminal o consola.
     -Navega a la carpeta donde descargaste los archivos.
