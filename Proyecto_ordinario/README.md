@@ -1,5 +1,4 @@
 Proyecto de juegos
-
 Equipo: Patricia Pérez Cruz, Rebeca Espina Gregorio y Tania García Flores.
 
 Este repositorio es una recopilación de varios juegos implementados en Python a lo largo del semestre. Los juegos fueron desarrollados como parte del curso, y se agregan dos juegos adicionales: Carrera de Caballos y Batalla Naval, que fueron proyectos para el examen ordinario.
