@@ -1,5 +1,5 @@
-Proyecto de juegos
-Equipo: Patricia Pérez Cruz, Rebeca Espina Gregorio y Tania García Flores.
+#Proyecto de juegos
+#Equipo: Patricia Pérez Cruz, Rebeca Espina Gregorio y Tania García Flores.
 
 Este repositorio es una recopilación de varios juegos implementados en Python a lo largo del semestre. Los juegos fueron desarrollados como parte del curso, y se agregan dos juegos adicionales: Carrera de Caballos y Batalla Naval, que fueron proyectos para el examen ordinario.
 
@@ -25,9 +25,8 @@ Este es solo nuestro archivo que muestra un letrero con una frase o palabra, lo 
 Requisitos
 Para poder ejecutar estos programas se debe tener Python instalado en la computadora.
 
-Cómo ejecutar los Juegos
-
-    -Clona o descarga este repositorio en tu computadora.
-    -Abre una terminal o consola.
-    -Navega a la carpeta donde descargaste los archivos.
-    -Ejecuta el archivo correspondiente al juego que quiera jugar. 🤓
+Cómo ejecutar los Juegos 
+Clona o descarga este repositorio en tu computadora. 
+Abre una terminal o consola. 
+Navega a la carpeta donde descargaste los archivos. 
+Ejecuta el archivo correspondiente al juego que quiera jugar. 🤓
