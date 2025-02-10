@@ -23,7 +23,7 @@ El clásico juego de la batalla naval, donde los jugadores deben adivinar las po
 Este es solo nuestro archivo que muestra un letrero con una frase o palabra, lo que le da un toque más animado a nuestro proyecto.
 
 Requisitos
-Para poder ejecutar estos programas se debe tener Python instalado en la computadora
+Para poder ejecutar estos programas se debe tener Python instalado en la computadora.
 
 Cómo ejecutar los Juegos
     -Clona o descarga este repositorio en tu computadora.
